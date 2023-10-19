@@ -1,7 +1,12 @@
 window.onload = function(){
-    
+    [...document.forms].forEach((form) => form.reset());
+      
+        const ws = new WebSocket('wss://generator-serv.onrender.com');
+        console.log(ws);
+        let allLoaded = false;
+
     /*  Модальное окно  */
-    
+    ws.onopen = () => {
     let btn = document.querySelectorAll('.btn');
     let close_modal = document.getElementById('close_modal');
     let modal = document.getElementById('modal');
@@ -49,4 +54,5 @@ window.onload = function(){
     input.addEventListener("focus", mask, false);
     input.addEventListener("blur", mask, false);
     input.addEventListener("keydown", mask, false)
+};
 };
