@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание Алёна Гюлумян</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+    <div class="container">
+        <a class="btn" href="#open">Кликни</a>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal__wrapper">
+            <div class="modal__content">
+                <div class="modal__title">Получите набор файлов для руководителя:</div>
+                <div class="modal__docs">
+                    <div class="modal__doc">
+                        <img src="img/doc.png" alt="">
+                    </div>
+                    <div class="modal__doc">
+                        <img src="img/xls.png" alt="">
+                    </div>
+                    <div class="modal__doc">
+                        <img src="img/pdf.png" alt="">
+                    </div>
+                    <div class="modal__doc">
+                        <img src="img/pdf.png" alt="">
+                    </div>
+                    <div class="modal__doc">
+                        <img src="img/pdf.png" alt="">
+                    </div>
+                    <div class="modal__doc">
+                        <img src="img/pdf.png" alt="">
+                    </div>
+                    <div class="modal__doc">
+                        <img src="img/pdf.png" alt="">
+                    </div>
+                </div>
+                <div class="modal__books">
+                    <img src="img/books.png" alt="">
+                </div>
+            </div>
+            <form class="modal__form" action="send.php" method="post">
+                <div class="modal__input">
+                    <label for="email">Введите Email для получения файлов:</label>
+                    <input id="email" type="text" name="email" placeholder="E-mail">
+                </div>
+                <div class="modal__input">
+                    <label for="phone">Введите телефон для подтверждения доступа:</label>
+                    <input id="phone" type="text" name="phone" placeholder="+7 (000) 000-00-00" required pattern=".{18,18}">
+                </div>
+                <button class="modal--btn" type="submit">
+                    <span>Скачать файлы</span><img src="img/icon.png" alt="">
+                </button>
+                <div class="modal__sizes">
+                    <div class="modal__size">PDF 4,7 MB</div>
+                    <div class="modal__size">DOC 0,8 MB</div>
+                    <div class="modal__size">XLS 1,2 MB</div>
+                </div>
+            </form>
+            <div id="close_modal" class="modal__close">
+                <img src="img/close.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
